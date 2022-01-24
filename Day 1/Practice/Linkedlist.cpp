@@ -109,10 +109,10 @@ int main() {
     
   
     Node* tmp = head;
-        while (tmp != NULL) {
-            cout << tmp->data<<" ";
-            tmp = tmp->next;
-      }
+    while (tmp != NULL) {
+       cout << tmp->data<<" ";
+       tmp = tmp->next;
+    }
       
     if(existsOrNot(head,96)){
         cout<<"Exists";
