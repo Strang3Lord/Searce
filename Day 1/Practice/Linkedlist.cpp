@@ -22,15 +22,22 @@ public:
  //Inserts an element at the end 
  void insertAtEnd(Node* &head, int data){
       Node* newNode = new Node;
+      newNode->data=data;
+      newNode->next = NULL;
       
       Node* tmp = head;
+     
+      if (head == NULL) { 
+        head = newNode; 
+        return; 
+      } 
+     
       while(tmp->next!=NULL){
           tmp = tmp->next;
       }
       
       tmp->next = newNode;
-      newNode->data=data;
-      newNode->next = NULL;
+      
   }
   
  //Inserts an element in the middle 
